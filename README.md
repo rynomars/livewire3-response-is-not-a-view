@@ -13,3 +13,5 @@ The methods assertViewHas and assertViewIs ensures the response "original" prope
 If the "original" response property is not a view, PHPUnit::fail('The response is not a view.');
 is return and the tests fail. Since Livewire changed the "original" value to a string, the
 assertion fails because the response is no longer a view.
+
+The included unit test, "test_response_view_has_passes_successfully" shows the bug.

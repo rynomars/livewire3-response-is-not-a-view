@@ -10,6 +10,7 @@ class TestControllerTest extends TestCase
     {
         $this->call('GET', '/')
             ->assertOk()
+            ->assertViewIs('test')
             ->assertViewHas('name');
     }
 }
